@@ -1,0 +1,100 @@
+#raf-splash {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  color: #aaa;
+  z-index: 10;
+  text-align: center;
+  animation: hide 1s 9s forwards;
+  /*animation: hide 1s forwards; */
+}
+@keyframes hide {
+  0% {
+    opacity: 1;
+    height: 100%;
+  }
+  99.9% {
+    opacity: 0;
+    height: 100%;
+  }
+  100% {
+    opacity: 0;
+    height: 0;
+  }
+}
+.raf-flex {
+  display: flex;
+}
+.raf-flex--vertical {
+  flex-direction: column;
+}
+.raf-flex--center {
+  justify-content: center;
+  align-items: center;
+}
+.raf-splash--content {
+  height: 100%;
+}
+#raf-token {
+  height: 50px;
+  width: 50px;
+  opacity: 0;
+  animation: reveal 2s 6s forwards, fallingToken 1s 6s forwards;
+}
+#raf-token > img {
+  max-width: 100%;
+  max-height: auto;
+}
+#raf-token__image {
+  position: fixed;
+  overflow: hidden;
+  top: 0;
+  height: 100%;
+  left: 0;
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+@keyframes reveal {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fallingToken {
+  from {
+    transform: translate3d(0px, -200px, 0px) rotate(720deg);
+  }
+  to {
+    transform: translate3d(0px, -20px, 0px) rotate(0deg);
+  }
+}
+#raf-name {
+  opacity: 0;
+  font-size: 200%;
+  animation: reveal 2s forwards, moveUp 1s 2s forwards;
+}
+#raf-sub1 {
+  opacity: 0;
+  animation: moveUp 1s 2s forwards, reveal 1s 2s forwards;
+  overflow: hidden;
+}
+#raf-sub2 {
+  opacity: 0;
+  animation: moveUp 1s 2s forwards, reveal 2s ease 4s forwards;
+  overflow: hidden;
+}
+@keyframes moveUp {
+  from {
+    transform: translate3d(0px, 0px, 0px);
+  }
+  to {
+    transform: translate3d(0px, -20px, 0px);
+  }
+}
