@@ -1,0 +1,62 @@
+#raf-item-header {
+  height: 48px !important;
+  width: 100%;
+  z-index: 3;
+}
+.raf-flex {
+  display: flex;
+}
+.raf-flex--horizontal {
+  flex-direction: row;
+}
+.raf-spacer {
+  flex: 1;
+}
+.raf-spacer--8px {
+  width: 8px;
+  height: 8px;
+}
+.raf-background--gray {
+  background-color: #555;
+}
+.raf-font--2x {
+  font-size: 200%;
+}
+.raf-item-name {
+  padding: 0 8px;
+}
+.raf-hint-box {
+  position: fixed;
+  top: 50px;
+  right: 25px;
+  width: 200px;
+  height: auto;
+  background: LightBlue;
+  border-radius: 5px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.14), 0 6px 2px -4px rgba(0, 0, 0, 0.2),
+    0 2px 10px 0 rgba(0, 0, 0, 0.12);
+  padding: 10px;
+}
+.raf-hidden {
+  display: none;
+}
+.raf-color--black {
+  color: black;
+}
+.raf-color--offWhite {
+  color: #ddd;
+}
+.raf-dismiss-button {
+  background-color: SteelBlue;
+  color: white;
+  border: none;
+  height: 30px;
+  width: 100%;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  font-size: 16px;
+}
+.raf-margin--auto {
+  margin: auto;
+}
