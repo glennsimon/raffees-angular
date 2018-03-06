@@ -38,6 +38,9 @@
 .raf-splash--content {
   height: 100%;
 }
+.raf-spacer {
+  flex: 1;
+}
 #raf-token {
   height: 50px;
   width: 50px;
@@ -97,4 +100,9 @@
   to {
     transform: translate3d(0px, -20px, 0px);
   }
+}
+app-item-footer {
+  position: absolute;
+  bottom: 8px;
+  left: 8px;
 }
